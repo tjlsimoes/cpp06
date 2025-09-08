@@ -34,6 +34,12 @@ static bool	is_nbr(const char *nptr)
 	return (false);
 }
 
+
+ScalarConverter::ScalarConverter()
+{}
+ScalarConverter::~ScalarConverter()
+{}
+
 void	ScalarConverter::convert(std::string nbr_str)
 {
 	size_t	str_len;

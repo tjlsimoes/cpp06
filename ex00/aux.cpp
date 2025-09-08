@@ -2,7 +2,7 @@
 
 void	char_conversion(std::string nbr_str)
 {
-	std::cout << "Char conversion" << std::endl; ///
+	// std::cout << "Char conversion" << std::endl; ///
 	std::cout
 	<<	"int: " << static_cast<int>(nbr_str[0]) << "\n"
 	<< "float: " << static_cast<float>(nbr_str[0]) << ".0f\n"
@@ -15,7 +15,7 @@ void	int_conversion(std::string nbr_str)
 	int	nbr;
 	nbr = atoi(nbr_str.c_str());
 
-	std::cout << "Int conversion" << std::endl; ///
+	// std::cout << "Int conversion" << std::endl; ///
 
 	if (nbr <= 31 || nbr == 127)
 		std::cout << "char: " << "Non displayable" << "\n";
@@ -36,7 +36,7 @@ void	float_conversion(std::string nbr_str)
 {
 	float	nbr;
 
-	std::cout << "Float conversion" << std::endl; ///
+	// std::cout << "Float conversion" << std::endl; ///
 
 	nbr = atof(nbr_str.c_str());
 	if (nbr <= 31.0 || nbr == 127.0)
@@ -72,7 +72,7 @@ void	double_conversion(std::string nbr_str)
 {
 	double	nbr;
 
-	std::cout << "Double conversion" << std::endl; ///
+	// std::cout << "Double conversion" << std::endl; ///
 
 	nbr = atof(nbr_str.c_str());
 	if (nbr <= 31 || nbr == 127)

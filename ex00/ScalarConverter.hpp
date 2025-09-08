@@ -7,8 +7,12 @@
 #include <iomanip>
 class ScalarConverter
 {
+	private:
+		ScalarConverter();
+		~ScalarConverter();
 	public:
-		static	void convert(std::string nbr_str);	
+		static	void convert(std::string nbr_str);
+
 };
 
 void	char_conversion(std::string nbr_str);
