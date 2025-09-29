@@ -1,33 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   B.cpp                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/08 15:56:05 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/09/29 12:05:13 by tjorge-l         ###   ########.fr       */
+/*   Created: 2025/09/29 12:04:11 by tjorge-l          #+#    #+#             */
+/*   Updated: 2025/09/29 12:04:11 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_CPP
-# define MAIN_CPP
-#include "aux.hpp"
-
-
-int	main(void)
-{
-	Base	*ptr;
-
-	ptr = generate();
-	identify(NULL);
-	if (ptr)
-	{
-		identify(ptr);
-		identify(*ptr);
-	}
-	delete ptr;
-	return (0);
-}
-
-#endif
+#include "B.hpp"
