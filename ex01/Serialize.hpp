@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Serialize.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tjorge-l < tjorge-l@student.42lisboa.co    +#+  +:+       +#+        */
+/*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 15:57:05 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/09/08 15:57:05 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/09/29 11:53:15 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Serialize
 {
 	private:
 		Serialize();
+		Serialize	&operator=(const Serialize &other);				// Assignment Operator
+		Serialize(const Serialize &other);							// Copy Constructor
 		~Serialize();
 	public:
 		static uintptr_t	serialize(Data *ptr);

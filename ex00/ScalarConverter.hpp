@@ -9,6 +9,8 @@ class ScalarConverter
 {
 	private:
 		ScalarConverter();
+		ScalarConverter	&operator=(const ScalarConverter &other);				// Assignment Operator
+		ScalarConverter(const ScalarConverter &other);							// Copy Constructor
 		~ScalarConverter();
 	public:
 		static	void convert(std::string nbr_str);

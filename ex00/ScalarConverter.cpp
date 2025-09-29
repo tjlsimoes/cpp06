@@ -37,6 +37,18 @@ static bool	is_nbr(const char *nptr)
 
 ScalarConverter::ScalarConverter()
 {}
+
+ScalarConverter	&ScalarConverter::operator=(const ScalarConverter &other)
+{
+	(void)&other;
+	return (*this);
+}
+
+ScalarConverter::ScalarConverter(const ScalarConverter &other)
+{
+	(void)&other;
+}
+
 ScalarConverter::~ScalarConverter()
 {}
 
