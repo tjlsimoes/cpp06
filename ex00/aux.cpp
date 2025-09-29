@@ -27,8 +27,8 @@ void	int_conversion(std::string nbr_str)
 	std::cout << "int: " << nbr << "\n";
 
 	std::cout
-	<< "float: " << std::fixed << std::setprecision(1) << static_cast<float>(nbr) << ".0f\n"
-	<< "double: " << std::fixed << std::setprecision(1) << static_cast<double>(nbr) << ".0"
+	<< "float: " << std::fixed << std::setprecision(1) << static_cast<float>(nbr) << "f\n"
+	<< "double: " << std::fixed << std::setprecision(1) << static_cast<double>(nbr)
 	<< std::endl;
 }
 
