@@ -6,7 +6,7 @@
 /*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 12:04:54 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/09/29 12:04:55 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/10/06 10:04:54 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,11 +82,11 @@ void	float_conversion(std::string nbr_str)
 
 void	double_conversion(std::string nbr_str)
 {
-	double	nbr;
+	long double	nbr;
 
 	// std::cout << "Double conversion" << std::endl; ///
 
-	nbr = atof(nbr_str.c_str());
+	nbr = strtold(nbr_str.c_str(), NULL);
 	if (nbr <= 31 || nbr == 127)
 		std::cout << "char: " << "Non displayable" << "\n";
 	else if (nbr > 127 || nbr_str == "-inff" || nbr_str == "+inff" 
@@ -117,5 +117,16 @@ void	double_conversion(std::string nbr_str)
 	else
 		std::cout << "float: " << std::fixed << std::setprecision(1) << static_cast<float>(nbr) << "\n";
 
-	std::cout << "double: " << nbr_str << "\n";
+	if (nbr_str == "-inf")
+		std::cout << "double: -inf" << "\n";
+	else if (nbr <= std::numeric_limits<double>::min())
+		std::cout << "double: " << "underflow" << "\n";
+	else if (nbr_str == "+inf")
+		std::cout << "double: +inf" << "\n";
+	else if (nbr >= std::numeric_limits<double>::max())
+		std::cout << "double: " << "overflow" << "\n";
+	else if (nbr_str == "nan")
+		std::cout << "double: nan" << "\n";
+	else
+		std::cout << "double: " << std::fixed << std::setprecision(1) << nbr << "\n";
 }

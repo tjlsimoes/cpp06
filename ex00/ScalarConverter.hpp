@@ -6,7 +6,7 @@
 /*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 12:04:47 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/10/06 09:46:40 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/10/06 09:58:37 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include <stdlib.h>
 #include <limits>
 #include <iomanip>
+#include <cstdlib>
 class ScalarConverter
 {
 	private:
