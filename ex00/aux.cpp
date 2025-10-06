@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   aux.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tjorge-l < tjorge-l@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 12:04:54 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/10/06 10:04:54 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/10/06 16:52:51 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	char_conversion(std::string nbr_str)
 {
 	// std::cout << "Char conversion" << std::endl; ///
 	std::cout
+	<< "char: " << nbr_str[0] << "\n"
 	<<	"int: " << static_cast<int>(nbr_str[0]) << "\n"
 	<< "float: " << static_cast<float>(nbr_str[0]) << ".0f\n"
 	<< "double: " << static_cast<double>(nbr_str[0]) << ".0"
