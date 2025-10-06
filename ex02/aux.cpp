@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   aux.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tjorge-l < tjorge-l@student.42lisboa.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/08 15:56:23 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/09/29 12:06:01 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/10/06 16:53:57 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ void	identify(Base &p)
 	{
 		(void)dynamic_cast<A&>(p);
 		std::cout << "A" << std::endl;
+		return ;
 	}
 	catch (...)
 	{}
@@ -60,6 +61,7 @@ void	identify(Base &p)
 	{
 		(void)dynamic_cast<B&>(p);
 		std::cout << "B" << std::endl;
+		return ;
 	}
 	catch (...)
 	{}
@@ -67,6 +69,8 @@ void	identify(Base &p)
 	{
 		(void)dynamic_cast<C&>(p);
 		std::cout << "C" << std::endl;
+		return ;
+
 	}
 	catch (...)
 	{}
