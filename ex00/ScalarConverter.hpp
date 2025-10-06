@@ -6,12 +6,12 @@
 /*   By: tjorge-l <tjorge-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/29 12:04:47 by tjorge-l          #+#    #+#             */
-/*   Updated: 2025/09/29 12:04:47 by tjorge-l         ###   ########.fr       */
+/*   Updated: 2025/10/06 09:46:40 by tjorge-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCALAR_CONVERTER_HPP
-# define SCALAR_CONVERTER
+# define SCALAR_CONVERTER_HPP
 #include <string>
 #include <iostream>
 #include <stdlib.h>
